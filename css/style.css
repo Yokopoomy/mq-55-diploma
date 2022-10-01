@@ -33,7 +33,7 @@ body {
   width: 180px;
 }
 
-.header:before {
+.header::before {
   content: "";
   display: block;
   position: absolute;
@@ -83,6 +83,74 @@ body {
   line-height: 1.7;
   text-transform: uppercase;
   z-index: 4;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.trends_header {
+  width: 100%;
+  font-size: 14px;
+  margin: 0 auto 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-family: "OpenSans-Bold", sans-serif;
+  text-align: center;
+}
+
+.trends_header::after {
+  content: "";
+  display: block;
+  background-color: #e1d9bd;
+  height: 3px;
+  width: 66px;
+  margin: 10px auto 13px;
+}
+
+.trends_posts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trends_post {
+  width: calc(25% - 5px);
+  position: relative;
+}
+
+.trends_image {
+  width: 100%;
+}
+
+.trends_news {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+}
+
+.trends_tags_item {
+  display: inline;
+  list-style-type: none;
+  margin: 0 14px 0 0;
+}
+
+.trends_tags_link {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.trends_link {
+  color: white;
+  text-decoration: none;
+}
+
+.trends_caption {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 6px;
+  display: inline-block;
   font-family: "OpenSans-Bold", sans-serif;
 }
 
@@ -222,7 +290,7 @@ body {
   text-align: center;
 }
 
-.aside_caption:after {
+.aside_caption::after {
   content: "";
   display: block;
   background-color: #e1d9bd;
@@ -305,7 +373,7 @@ body {
   border: 1px solid #b59f5b;
 }
 
-.search:focus ~ .search_title:before {
+.search:focus ~ .search_title::before {
   content: attr(data-title);
   width: 100px;
   left: -42%;
@@ -325,7 +393,7 @@ body {
   background-color: #b59f5b;
 }
 
-.data-title:before {
+.data-title::before {
   position: absolute;
   display: inline-block;
   color: #000;
@@ -336,7 +404,7 @@ body {
   font-family: "OpenSans-Regular", sans-serif;
 }
 
-.search_submit:hover:before {
+.search_submit:hover::before {
   content: attr(data-title);
   width: 100px;
   left: 70%;
@@ -364,7 +432,7 @@ body {
   border: 1px solid #b59f5b;
 }
 
-.email:focus ~ .email_title:before {
+.email:focus ~ .email_title::before {
   content: attr(data-title);
   width: 100px;
   left: -42%;
