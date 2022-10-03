@@ -112,7 +112,7 @@ body {
 }
 
 .trends_post {
-  width: calc(25% - 5px);
+  width: calc(25% - 1px);
   position: relative;
 }
 
@@ -120,10 +120,27 @@ body {
   width: 100%;
 }
 
+.trends_post:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
 .trends_news {
   position: absolute;
   bottom: 20px;
-  margin: 0 auto;
+  border: 1px solid white;
+  margin: 10px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.trends_tags {
+  padding-left: 0;
 }
 
 .trends_tags_item {
@@ -386,7 +403,7 @@ body {
   border: 0;
   cursor: pointer;
 
-  background-image: url(../images/search.svg);
+  background-image: url(../svg/search.svg);
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
