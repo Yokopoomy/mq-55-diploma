@@ -368,10 +368,14 @@
         <input type="text" placeholder="Почти каждый день" class="popup_input">
       </label>
       
-      <p class="popup_text">Вы пописаны на e-mail рассылку?</p>
-      <label>
-        <input name="email" type="radio" value="yes" class="popup_checkbox" checked>Да
-        <input name="email" type="radio" value="no">Нет
+      <p class="popup_text">Вы подписаны на e-mail рассылку?</p>
+      <label class="popup_checkbox">
+        <input class="popup_radio" name="popup_checkbox" type="radio" value="yes" checked>
+        <span class="popup_checkbox_text">Да</span>
+      </label>
+      <label class="popup_checkbox">
+        <input class="popup_radio" name="popup_checkbox" type="radio" value="no">
+        <span class="popup_checkbox_text">Нет</span>
       </label>
 
       <p class="popup_text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
