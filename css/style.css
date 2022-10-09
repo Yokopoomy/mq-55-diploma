@@ -960,21 +960,70 @@ body {
 
   .trends_post {
     width: calc(50% - 2px);
-    margin-bottom: 5px;
+    height: 245px;
+    margin-bottom: 4px;
+  }
+
+  .trends_image {
+    object-position: bottom;
+  }
+
+  .trends_caption {
+    font-size: 17px;
+  }
+
+  .main {
+    padding: 47px 35px 33px;
+  }
+
+  .main_block_news {
+    margin-bottom: 40px;
+  }
+
+  .main_block_news::after {
+    content: "";
+    display: block;
+    background-color: #eeeeee;
+    height: 3px;
+    width: 100%;
+    margin: 2px auto;
+  }
+
+  .main_block_news:last-child::after {
+    display: none;
   }
 
   .news_image {
     width: 100%;
+    margin-right: 0;
   }
   
   .news_right {
-      width: 100%;
+    width: 100%;
+    margin: 12px 0 0;
+    padding-left: 0;
+  }
+
+  .news_caption {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .news_info {
+    margin: 18px 0 28px;
+  }
+
+  .ads_header {
+    font-size: 18px;
   }
 
   .ads_post {
     width: calc(50% - 2px);
     margin-bottom: 20px;
   }
+
+  .ads_image {
+    width: 100%;
 }
 
 @media (max-width: 1200px) and (orientation: landscape){
