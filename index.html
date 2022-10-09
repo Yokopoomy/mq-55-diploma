@@ -20,7 +20,7 @@
       <div class="nav_item"><a href="#0" class="nav_item_link">Контакты</a></div>
     </nav>
     <button class="menu__button">
-      <span class="menu__button-label">открыть меню</span>
+      <span class="menu__button_label">открыть меню</span>
     </button>
   </div>
   <h1 class="header_title">Блог о творчестве, спорте, и образе жизни</h1>
@@ -339,8 +339,34 @@
     <li class="footer_social_item"><a href="#0" class="social_link tumblr"><span class="icon_link_text">tumblr</span></a></li>
   </ul>
 </footer>
+<div class="popup _hidden">
+  <div class="popup_form">
+    <form action="">
+      <h3 class="popup_header">Ваш фидбек</h3>
+      <p class="popup_text">Как часто вы заходите на сайт?</p>
+
+      <label>
+        <span class="label_text">Поле частоты посещения сайта</span>
+        <input type="text" placeholder="Почти каждый день" class="popup_input">
+      </label>
+      
+      <p class="popup_text">Вы пописаны на e-mail рассылку?</p>
+      <label>
+        <input name="email" type="radio" value="yes" class="popup_checkbox" checked>Да
+        <input name="email" type="radio" value="no">Нет
+      </label>
+
+      <p class="popup_text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+      <textarea name="" id="" placeholder="Может, больше рецептов?" class="poput_comment"></textarea>
+
+      <button type="submit" value="" class="popup_submit">
+        <span class="popup_submit_text">Отправить</span>
+      </button>
+     
+    </form>
+    <button class="popup_close" type="button">Закрыть окно</button>
+  </div>
+</div>
 <div class="copyrate"><a href="#0" class="copyrate_link">Copyright © 2009–2019 City Blog LLC.</a></div>
 </body>
 </html>
-
-
