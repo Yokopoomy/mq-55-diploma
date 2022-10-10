@@ -600,13 +600,11 @@ body {
 
 .ads_image {
   margin-bottom: -30px;
-  object-fit: cover;
+  display: block;
 }
 
 .ads_post_info {
-  padding: 30px 5% 20px;
-  min-height: 50%;
-  max-height: 100%;
+  padding: 20px 5% 20px;
   border: 3px solid #d3c59d;
 }
 
@@ -616,21 +614,24 @@ body {
   line-height: 1.2;
   margin-top: 6px;
   display: inline-block;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
 }
 
 .ads_post_title {
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .ads_post_description {
-
+  display: block;
+  margin-top: 0;
+  line-height: 1.4;
 }
 
 .ads_post_link {
   text-decoration: none;
   color: #b59f5b;
-  font-family: "OpenSans-Bold", sans-serif;
+
 }
 
 .ads_post_link:hover {
@@ -642,6 +643,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 10px 0 0;
 }
 
 .ads_price {
@@ -652,17 +654,33 @@ body {
   font-size: 12px;
   display: block;
   text-decoration: line-through;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans-Bold", sans-serif;
 }
 
 .ads_new_price {
   display: block;
-  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 20px;
+  font-family: "OpenSans-Bold", sans-serif;
 }
 
 .ads_button_buy {
-  width: 100px;
-  height: 50px;
+  display: block;
+  width: 140px;
+  height: 48px;
+  border: 0;
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+
+.ads_button_buy:hover {
+  background-color: #323232;
+}
+
+.ads_button_text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "OpenSans-Bold", sans-serif;
 }
 
 /* Footer */
@@ -1050,13 +1068,13 @@ body {
     font-size: 18px;
   }
 
-  .ads_post {
-    width: calc(50% - 2px);
-    margin-bottom: 20px;
+  .ads_posts {
+    margin: 0 3%;
   }
 
-  .ads_image {
-   
+  .ads_post {
+    width: 48%;
+    margin-bottom: 10px;
   }
 
   .popup_header {
