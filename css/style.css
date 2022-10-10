@@ -1156,9 +1156,14 @@ body {
     width: 100%;
   }
 
-  .aside {
+  .main_block_news:last-child::after {
+    content: "";
+    display: block;
+    background-color: #eeeeee;
+    height: 3px;
     width: 100%;
-    margin-left: 0;
+    margin: 2px auto;
+    margin-bottom: 40px;
   }
 
   .aside {
@@ -1168,6 +1173,10 @@ body {
 
   .ads_post {
     width: 100%;
+  }
+
+  .aside_caption {
+    font-size: 18px;
   }
 }
 
