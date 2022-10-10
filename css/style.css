@@ -563,13 +563,13 @@ body {
 
 /* Блок с рекламой */
 
-.ads {
+.offer {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto 100px;
 }
 
-.ads_header {
+.offer_header {
   width: 100%;
   font-size: 14px;
   margin: 15px auto;
@@ -580,7 +580,7 @@ body {
   text-align: center;
 }
 
-.ads_header::after {
+.offer_header::after {
   content: "";
   display: block;
   background-color: #e1d9bd;
@@ -589,31 +589,31 @@ body {
   margin: 10px auto 13px;
 }
 
-.ads_posts {
+.offer_posts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.ads_post {
+.offer_post {
   width: 30%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.ads_image {
+.offer_image {
   margin-bottom: -30px;
   display: block;
 }
 
-.ads_post_info {
+.offer_post_info {
   padding: 20px 5% 20px;
   width: 300px;
   border: 3px solid #d3c59d;
 }
 
-.ads_post_text {
+.offer_post_text {
   font-size: 15px;
   width: 100%;
   line-height: 1.2;
@@ -622,28 +622,28 @@ body {
   font-family: "OpenSans-Regular", sans-serif;
 }
 
-.ads_post_title {
+.offer_post_title {
   text-transform: uppercase;
   margin-bottom: 6px;
 }
 
-.ads_post_description {
+.offer_post_description {
   display: block;
   margin-top: 0;
   line-height: 1.4;
 }
 
-.ads_post_link {
+.offer_post_link {
   text-decoration: none;
   color: #b59f5b;
 
 }
 
-.ads_post_link:hover {
+.offer_post_link:hover {
   text-decoration: underline;
 }
 
-.ads_post_card {
+.offer_post_card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -651,24 +651,24 @@ body {
   margin: 10px 0 0;
 }
 
-.ads_price {
+.offer_price {
 
 }
 
-.ads_old_price {
+.offer_old_price {
   font-size: 12px;
   display: block;
   text-decoration: line-through;
   font-family: "OpenSans-Bold", sans-serif;
 }
 
-.ads_new_price {
+.offer_new_price {
   display: block;
   font-size: 20px;
   font-family: "OpenSans-Bold", sans-serif;
 }
 
-.ads_button_buy {
+.offer_button_buy {
   display: block;
   width: 140px;
   height: 48px;
@@ -677,11 +677,11 @@ body {
   cursor: pointer;
 }
 
-.ads_button_buy:hover {
+.offer_button_buy:hover {
   background-color: #323232;
 }
 
-.ads_button_text {
+.offer_button_text {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
@@ -1069,20 +1069,20 @@ body {
     margin: 18px 0 28px;
   }
 
-  .ads_header {
+  .offer_header {
     font-size: 18px;
   }
 
-  .ads_posts {
+  .offer_posts {
     margin: 0 3%;
   }
 
-  .ads_post {
+  .offer_post {
     width: 48%;
     margin-bottom: 25px;
   }
 
-  .ads_post_info {
+  .offer_post_info {
     width: 292px;
   }
 
@@ -1176,11 +1176,11 @@ body {
     margin-left: 0;
   }
 
-  .ads_post {
+  .offer_post {
     width: 100%;
   }
 
-  .ads_post_info {
+  .offer_post_info {
     width: 285px;
   }
 
