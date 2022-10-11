@@ -598,9 +598,8 @@ body {
 .offer_post {
   width: 30%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
 }
 
 .offer_image {
@@ -610,7 +609,7 @@ body {
 
 .offer_post_info {
   padding: 20px 5% 20px;
-  width: 300px;
+  flex-grow: 1;
   border: 3px solid #d3c59d;
 }
 
