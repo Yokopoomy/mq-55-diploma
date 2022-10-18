@@ -171,9 +171,17 @@ body {
   font-family: "OpenSans-Bold", sans-serif;
 }
 
+.trends_tags_link:hover {
+  text-decoration: underline;
+}
+
 .trends_link {
   color: white;
   text-decoration: none;
+}
+
+.trends_link:hover {
+  color: #b59f5b;
 }
 
 .trends_caption {
@@ -193,7 +201,7 @@ body {
 
 .main {
   max-width: 1170px;
-  padding: 64px 15px;
+  padding: 64px 15px 42px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -500,7 +508,7 @@ body {
 }
 
 .aside_tags {
-  margin: -2px 0 0 0;
+  margin: -8px 0 0 0;
   padding-left: 0;
 }
 
@@ -566,12 +574,12 @@ body {
 .offer {
   max-width: 1170px;
   padding: 0 15px;
-  margin: 0 auto 100px;
+  margin: 0 auto 65px;
 }
 
 .offer_header {
   width: 100%;
-  font-size: 14px;
+  font-size: 20px;
   margin: 15px auto;
   display: inline-block;
   text-transform: uppercase;
@@ -603,33 +611,35 @@ body {
 }
 
 .offer_image {
-  margin-bottom: -30px;
+  margin-bottom: -33px;
   display: block;
 }
 
 .offer_post_info {
-  padding: 20px 5% 20px;
+  padding: 20px 6% 24px;
   flex-grow: 1;
-  border: 3px solid #d3c59d;
+  border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
 .offer_post_text {
   font-size: 15px;
-  width: 100%;
   line-height: 1.2;
-  margin-top: 6px;
+  margin-top: 12px;
   display: inline-block;
 }
 
 .offer_post_title {
   text-transform: uppercase;
+  font-size: 20px;
   margin-bottom: 6px;
+  font-family: "OpenSans-Bold", sans-serif;
 }
 
 .offer_post_description {
   display: block;
   margin-top: 0;
   line-height: 1.4;
+  font-family: "OpenSans-Regular", sans-serif;
 }
 
 .offer_post_link {
@@ -655,7 +665,8 @@ body {
 }
 
 .offer_old_price {
-  font-size: 12px;
+  font-size: 14px;
+  height: 14px;
   display: block;
   text-decoration: line-through;
   font-family: "OpenSans-Bold", sans-serif;
@@ -1068,6 +1079,10 @@ body {
     margin: 18px 0 28px;
   }
 
+  .offer {
+    margin: 0 auto 27px;
+  }
+
   .offer_header {
     font-size: 18px;
   }
@@ -1081,8 +1096,16 @@ body {
     margin-bottom: 25px;
   }
 
+  .offer_post_title {
+    font-size: 17px;
+  }
+
   .offer_post_info {
     width: 292px;
+  }
+
+  .footer {
+    margin: 0 34px;
   }
 
   .popup_header {
@@ -1109,6 +1132,7 @@ body {
 
 @media (max-width: 640px){
   .header {
+    padding-top: 35px;
     background-image: url(../images/banner-mobile.jpg);
   }
 
@@ -1134,12 +1158,12 @@ body {
 
   .trends_header {
     font-size: 16px;
-    margin: 40px auto 5px;
+    margin: 40px auto 9px;
   }
 
   .trends_news {
-    margin-top: 11px;
-    padding: 5% 5% 4%;
+    padding: 4% 5% 4%;
+    margin: 15px 4%;
   }
 
   .trends_post {
@@ -1148,16 +1172,21 @@ body {
   }
 
   .trends_caption {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 11px;
   }
 
   .main {
     flex-wrap: wrap;
+    padding: 37px 15px 26px;
   }
 
   .main_block {
     width: 100%;
+  }
+
+  .main_block_news {
+    margin-bottom: 35px;
   }
 
   .main_block_news:last-child::after {
@@ -1167,7 +1196,21 @@ body {
     height: 3px;
     width: 100%;
     margin: 2px auto;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+  }
+
+  .news_caption {
+    font-size: 16px;
+    margin-top: 11px;
+  }
+
+  .news_info {
+    margin: 3px 0 0;
+  }
+
+  .news_text {
+    font-size: 14px;
+    padding-right: 5px;
   }
 
   .aside {
@@ -1180,11 +1223,47 @@ body {
   }
 
   .offer_post_info {
-    width: 285px;
+    width: 329px;
+    box-sizing: border-box;
   }
 
   .aside_caption {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0 auto 13px;
+  }
+
+  .aside_item {
+    margin-bottom: 43px;
+  }
+
+  .aside_tags_link {
+    padding: 4px 13px;
+    margin: 6px 3px;
+  }
+
+  .offer {
+    margin: 0 auto 18px;
+  }
+
+  .offer_header {
+    font-size: 16px;
+  }
+
+  .offer_post_info {
+    padding: 20px 5% 24px;
+  }
+
+  .offer_post_card {
+    padding-right: 7px;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    margin: 0 15px;
+  }
+
+  .copyrate {
+    margin: 42px auto 40px;
   }
 }
 
@@ -1193,12 +1272,6 @@ body {
     width: calc(50% - 2px);
   }
 }
-
-
-
-
-
-
 
 @font-face {
   font-family: "OpenSans-Regular";
