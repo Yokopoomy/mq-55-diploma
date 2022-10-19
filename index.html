@@ -219,11 +219,12 @@
         </div>
       </div>
       <form class="aside_search">
-        <label class="aside_label_search">
+        <label for="search">
           <span class="label_text">Поле поиска</span>
-          <input type="search" placeholder="Найти..." class="search" required>
-          <div data-title="Введите текст для поиска" class="data-title search_title"></div>
         </label>
+          <input type="search" name="search" placeholder="Найти..." class="search" required>
+          <div data-title="Введите текст для поиска" class="data-title search_title"></div>
+        
         <button type="submit" value="" data-title="Нажмите для поиска" class="data-title search_submit">
           <span class="label_text">Кнопка поиска</span>
           <span class="icon_link_text">search</span>
@@ -233,11 +234,11 @@
     <div class="aside_item">
       <h3 class="aside_caption">Рассылка</h3>
       <form class="aside_email">
-        <label>
+        <label for="email">
           <span class="label_text">Поле подписки</span>
-          <input type="email" placeholder="Ваш email-адрес" class="email" required>
-          <div data-title="Введите Ваш email адрес" class="data-title email_title"></div>
         </label>
+          <input type="email" name="email" placeholder="Ваш email-адрес" class="email" required>
+          <div data-title="Введите Ваш email адрес" class="data-title email_title"></div>
         <button type="submit" value="" class="email_submit">
           <span class="email_submit_text">Подписаться</span>
         </button>
@@ -366,7 +367,7 @@
 </footer>
 <div class="popup _hidden">
   <div class="popup_form">
-    <form action="">
+    <form action="#0">
       <h3 class="popup_header">Ваш фидбек</h3>
       <p class="popup_text">Как часто вы заходите на сайт?</p>
       <label>
@@ -388,7 +389,7 @@
         <span class="popup_checkbox_text">Нет</span>
       </label>
       <p class="popup_text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
-      <textarea name="" id="" placeholder="Может, больше рецептов?" class="poput_comment"></textarea>
+      <textarea placeholder="Может, больше рецептов?" class="poput_comment"></textarea>
       <button type="submit" value="" class="popup_submit">
         <span class="popup_submit_text">Отправить</span>
       </button>
