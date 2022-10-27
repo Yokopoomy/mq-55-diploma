@@ -148,6 +148,7 @@ body {
 }
 
 .trends_news {
+  width: 100%;
   border: 3px solid rgba(181, 159, 91, 0.6);
   margin: 15px 20px;
   padding: 5% 8% 4%;
@@ -314,7 +315,7 @@ body {
 }
 
 .aside_item {
-  margin-bottom: 58px;
+  margin-bottom: 56px;
   margin-top: -5px;
 }
 
@@ -389,7 +390,7 @@ body {
 .aside_search {
   display: flex;
   position: relative;
-  margin: 60px 0;
+  margin: 60px 0 64px;
 }
 
 .label_text {
@@ -459,6 +460,7 @@ body {
 
 .aside_email {
   position: relative;
+  margin: -5px 0 61px;
 }
 
 .email {
@@ -617,7 +619,7 @@ body {
 }
 
 .offer_post_info {
-  padding: 20px 6% 24px;
+  padding: 20px 20px 24px;
   flex-grow: 1;
   border: 3px solid rgba(181, 159, 91, 0.6);
 }
@@ -1047,7 +1049,11 @@ body {
     background-color: #eeeeee;
     height: 3px;
     width: 100%;
-    margin: 5px auto;
+    margin: 7px auto 3px;
+  }
+
+   .main_block_news:nth-of-type(2)::after {
+    margin: 7px auto 0;
   }
 
   .main_block_news:last-child::after {
@@ -1083,6 +1089,10 @@ body {
     margin: 17px 0 25px;
   }
 
+  .main_block_news:nth-of-type(2) .news_info {
+      margin-bottom: 28px;
+  }
+
   .offer {
     margin: 0 auto 20px;
   }
@@ -1097,6 +1107,7 @@ body {
 
   .offer_post {
     width: 48%;
+    min-width: 338px;
     margin-bottom: 30px;
   }
 
@@ -1246,6 +1257,10 @@ body {
     margin-bottom: 43px;
   }
 
+  .main_block_news:nth-of-type(2)::after {
+    margin: 19px auto 0;
+  }
+
   .news_image {
     min-height: unset;
   }
@@ -1258,6 +1273,10 @@ body {
   .news_info {
     margin: 0 0 13px;
   }
+
+  .main_block_news:nth-of-type(2) .news_info {
+    margin-bottom: 13px;
+}
 
   .news_text {
     font-size: 14px;
@@ -1274,6 +1293,10 @@ body {
     margin: 60px 0 0;
   }
 
+  .aside_email {
+    margin: -5px 0 47px;
+  }
+
   .offer_header {
     margin: 12px auto;
   }
@@ -1281,6 +1304,7 @@ body {
   .offer_post {
     margin-bottom: 24px;
     width: 100%;
+    min-width: unset;
   }
 
   .offer_post_info {
