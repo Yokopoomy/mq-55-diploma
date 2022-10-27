@@ -1263,7 +1263,7 @@ body {
   }
 
   .news_image {
-    min-height: unset;
+    min-height: 200px;
   }
 
   .news_caption {
