@@ -1295,6 +1295,10 @@ body {
     margin-left: 0;
   }
 
+  .aside_news_text {
+    min-width: unset;
+  }
+
   .aside_search {
     margin: 60px 0 0;
   }
@@ -1351,6 +1355,7 @@ body {
   .offer_image {
     width: 285px;
     height: 285px;
+    max-width: unset;
   }
 
   .offer_post_info {
